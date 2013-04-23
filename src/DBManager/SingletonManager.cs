@@ -1,38 +1,47 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Data.SqlClient;
+﻿using System.Data.SqlClient;
 
 namespace DBManager
 {
-    class SingletonManager
+    /// <summary>
+    /// The singleton manager.
+    /// </summary>
+    public class SingletonManager
     {
-        private static SingletonManager _instance;
+        /// <summary>
+        /// The _instance.
+        /// </summary>
+        private static SingletonManager instance;
 
-        private String stringConnection
-        {
-            get; set;
-        }
+        /// <summary>
+        /// The string connection.
+        /// </summary>
+        private readonly string stringConnection;
 
-        private SqlConnection con
-        {
-            get; set;
-        }
+        /// <summary>
+        /// The con (connection to the DB).
+        /// </summary>
+        private SqlConnection con;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="SingletonManager"/> class.
+        /// </summary>
         protected SingletonManager()
         {
-            using (con = new SqlConnection(stringConnection) )
+            this.stringConnection = string.Empty;
+            using (this.con = new SqlConnection(this.stringConnection))
             {
-
             }
         }
 
+        /// <summary>
+        /// The instance of the SingletonManager.
+        /// </summary>
+        /// <returns>
+        /// The <see cref="SingletonManager"/>.
+        /// </returns>
         public static SingletonManager Instance()
         {
-             if (_instance == null) _instance = new SingletonManager();
-             return _instance;
+            return instance ?? (instance = new SingletonManager());
         }
-    
     }
 }

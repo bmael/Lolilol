@@ -49,10 +49,9 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DBManagerTest.cs" />
-    <Compile Include="TestLauncher.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="TestBD.sdf">
+    <Content Include="LolilolDB.sdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

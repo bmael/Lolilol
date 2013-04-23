@@ -3,18 +3,24 @@ using System.Text;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DBManager.SingletonManager;
 
-namespace DBManager
+namespace Tests
 {
+    using System.Diagnostics.CodeAnalysis;
+
+    /// <summary>
+    /// The database manager tests.
+    /// </summary>
     [TestClass]
-    public class DBManagerTest
+    public class DbManagerTest
     {
-        [TestMethod]
-        public void isSingleton()
+        /// <summary>
+        /// Test if the manager is a Singleton.
+        /// </summary>
+        public void IsSingleton()
         {
-            SingletonManager s1 = SingletonManager.Instance();
-            SingletonManager s2 = SingletonManager.Instance();
+            var s1 = DBManager.SingletonManager.Instance();
+            var s2 = DBManager.SingletonManager.Instance();
 
             Assert.AreSame(s1, s2);
         }
