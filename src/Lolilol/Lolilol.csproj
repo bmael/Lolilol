@@ -73,6 +73,11 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="LolilolDB.sdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

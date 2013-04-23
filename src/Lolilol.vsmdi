@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <TestLists xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestList name="LolilolTests" id="662d2652-5160-437d-8dcb-cadba47c07df" parentListId="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
+    <Description>All Test of Lolilol solution</Description>
+  </TestList>
   <TestList name="Listes de tests" id="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
     <RunConfiguration id="dbb71bc6-13e9-4b98-91b2-8b0e453b8f4f" name="Local" storage="local.testsettings" type="Microsoft.VisualStudio.TestTools.Common.TestRunConfiguration, Microsoft.VisualStudio.QualityTools.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   </TestList>
