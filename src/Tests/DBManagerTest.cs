@@ -11,6 +11,7 @@ namespace Tests
         /// <summary>
         /// Test if the manager is a Singleton.
         /// </summary>
+        [TestMethod]
         public void IsSingleton()
         {
             var s1 = DBManager.SingletonManager.Instance();
