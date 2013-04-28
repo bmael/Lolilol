@@ -52,11 +52,6 @@
     <Compile Include="DBManagerTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="LolilolDB.sdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\DBManager\DBManager.csproj">
       <Project>{496EDEE9-D2B7-4197-9709-C46717FBF239}</Project>
       <Name>DBManager</Name>

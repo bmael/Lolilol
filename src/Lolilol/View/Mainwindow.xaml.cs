@@ -7,9 +7,8 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Lolilol
+namespace Lolilol.View
 {
-    using System;
     using System.Windows;
 
     /// <summary>
@@ -48,11 +47,9 @@ namespace Lolilol
         /// <param name="e">
         /// The e.
         /// </param>
-        /// <exception cref="NotImplementedException">
-        /// </exception>
         private void ClickClose(object sender, RoutedEventArgs e)
         {
-
+            Application.Current.Shutdown();
         }
 
         /// <summary>
@@ -64,11 +61,9 @@ namespace Lolilol
         /// <param name="e">
         /// The e.
         /// </param>
-        /// <exception cref="NotImplementedException">
-        /// </exception>
         private void ClickAllChamp(object sender, RoutedEventArgs e)
         {
-           
+
         }
 
         /// <summary>
@@ -94,8 +89,6 @@ namespace Lolilol
         /// <param name="e">
         /// The e.
         /// </param>
-        /// <exception cref="NotImplementedException">
-        /// </exception>
         void ClickAllItems(object sender, RoutedEventArgs e)
         {
     
@@ -110,8 +103,6 @@ namespace Lolilol
         /// <param name="e">
         /// The e.
         /// </param>
-        /// <exception cref="NotImplementedException">
-        /// </exception>
         private void ClickAllBuilds(object sender, RoutedEventArgs e)
         {
        
@@ -126,8 +117,6 @@ namespace Lolilol
         /// <param name="e">
         /// The e.
         /// </param>
-        /// <exception cref="NotImplementedException">
-        /// </exception>
         private void ClickYob(object sender, RoutedEventArgs e)
         {
     
@@ -142,8 +131,6 @@ namespace Lolilol
         /// <param name="e">
         /// The e.
         /// </param>
-        /// <exception cref="NotImplementedException">
-        /// </exception>
         private void ClickYot(object sender, RoutedEventArgs e)
         {
 
@@ -158,8 +145,6 @@ namespace Lolilol
         /// <param name="e">
         /// The e.
         /// </param>
-        /// <exception cref="NotImplementedException">
-        /// </exception>
         private void ClickAboutUs(object sender, RoutedEventArgs e)
         {
 
