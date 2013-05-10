@@ -36,6 +36,8 @@ namespace Data.Management
         {
             // Init the database
             Instance(GetConnection("lolilol.sql").ConnectionString);
+
+            instance.CreateTable<Champion.Champion>(false);
         }
 
         /// <summary>

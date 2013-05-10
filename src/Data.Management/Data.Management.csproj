@@ -139,6 +139,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Champion\Champion.cs" />
+    <Compile Include="Champion\ChampionManager.cs" />
     <Compile Include="DbConnectionProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -151,6 +153,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common.Champion\Common.Champion.csproj">
+      <Project>{FE32FD30-2D5F-4C6E-B023-6751C9C85A43}</Project>
+      <Name>Common.Champion</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Common.Data.Utils\Common.Data.Utils.csproj">
       <Project>{43B5BE25-46F8-4571-B391-465CE5477AD3}</Project>
       <Name>Common.Data.Utils</Name>

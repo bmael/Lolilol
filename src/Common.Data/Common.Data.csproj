@@ -68,6 +68,7 @@
     <Compile Include="Models\IHasDate.cs" />
     <Compile Include="Models\IHasId.cs" />
     <Compile Include="Models\IHasComment.cs" />
+    <Compile Include="Models\IHero.cs" />
     <Compile Include="Models\IPerson.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
