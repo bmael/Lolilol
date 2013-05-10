@@ -15,23 +15,24 @@ namespace DBManager
         /// <summary>
         /// The string connection.
         /// </summary>
-        private readonly string stringConnection;
-
-        /// <summary>
-        /// The con (connection to the DB).
-        /// </summary>
-        private SqlConnection con;
+        private readonly string stringConnection; 
 
         /// <summary>
         /// Initializes a new instance of the <see cref="SingletonManager"/> class.
         /// </summary>
         protected SingletonManager()
         {
-            this.stringConnection = string.Empty;
-            using (this.con = new SqlConnection(this.stringConnection))
+            this.stringConnection = "database=LolilolDB.sdf1";
+            using (this.Con = new SqlConnection(this.stringConnection))
             {
+                this.Con.Open();
             }
         }
+
+        /// <summary>
+        /// Gets or sets the con.
+        /// </summary>
+        public SqlConnection Con { get; set; }
 
         /// <summary>
         /// The instance of the SingletonManager.

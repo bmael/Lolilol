@@ -3,10 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:model="clr-namespace:Lolilol.ViewModel"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300" Title="Lolilol Memento Application" Loaded="Window_Loaded">
+    
+    <Window.DataContext>
+        <model:MainWindowModel />
+    </Window.DataContext>
+    
     <Grid>
         <Menu VerticalAlignment="Top" Height="20">
+            <MenuItem Header="_File">
+                <MenuItem Header="_Quit" Command="{Binding Path=QuitClickedCommand}"/>
+            </MenuItem>
             <MenuItem Header="Champions">
                 <MenuItem Header="Champions Of The Weeks"></MenuItem>
                 <MenuItem Header="All Champions"></MenuItem>

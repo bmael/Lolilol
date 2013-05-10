@@ -19,5 +19,15 @@ namespace Tests
 
             Assert.AreSame(s1, s2);
         }
+
+        /// <summary>
+        /// Test if the connection is opened.
+        /// </summary>
+        [TestMethod]
+        public void IsOpened()
+        {
+            var s1 = DBManager.SingletonManager.Instance().Con;
+            Assert.AreEqual("LolilolDB.sdf1", s1.ConnectionString);
+        }
     }
 }

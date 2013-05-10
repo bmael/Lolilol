@@ -35,7 +35,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Model\" />
-    <Folder Include="ViewModel\" />
     <Folder Include="View\" />
   </ItemGroup>
   <PropertyGroup>
@@ -95,6 +94,7 @@
       <DependentUpon>Mainwindow.xaml</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
+    <Compile Include="ViewModel\MainWindowModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DBManager\DBManager.csproj">
