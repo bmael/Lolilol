@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:model="clr-namespace:Lolilol.ViewModel"
         mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300" Title="Lolilol Memento Application" Loaded="WindowLoaded">
+             d:DesignHeight="300" d:DesignWidth="300" Title="Lolilol Memento Application">
 
     <Window.DataContext>
         <model:MainWindowModel />
@@ -15,51 +15,35 @@
             <MenuItem Header="_File">
                 <!-- Fichier MENU-->
                 <MenuItem Header="_Quit"
-                          Command="{Binding Path=QuitClickedCommand}"></MenuItem>
+                          Command="{Binding Path=QuitClickedCommand}" />
             </MenuItem>
             
             <MenuItem Header="Champions">
                 <!-- Champions MENU-->
-                <MenuItem Name="CowItem" 
-                          Header="Champions Of The Weeks"
-                          Click="ClickCow"></MenuItem>
-                <MenuItem Name="AllChampItem" 
-                          Header="All Champions"
-                          Click="ClickAllChamp"></MenuItem>
+                <MenuItem Header="Champions Of The Weeks" />
+                <MenuItem Header="All Champions" />
             </MenuItem>
             
             <MenuItem Header="Items">
                 <!-- Items MENU-->
-                <MenuItem Name="AllItemsItem" 
-                          Header="View all Items"
-                          Click="ClickAllItems"></MenuItem>
+                <MenuItem Name="AllItemsItem" Header="View all Items"/>
             </MenuItem>
             
             <MenuItem Header="Builds">
                 <!-- Builds MENU-->
-                <MenuItem Name="AllBuildsItem" 
-                          Header="View all builds"
-                          Click="ClickAllBuilds"></MenuItem>
-                <MenuItem Name="YobItem" 
-                          Header="Create your own build"
-                          Click="ClickYob"></MenuItem>
+                <MenuItem Header="View all builds" />
+                <MenuItem Header="Create your own build" />
             </MenuItem>
             
             <MenuItem Header="Timers">
                 <!-- Timers MENU-->
-                <MenuItem Name="AllTimersItem" 
-                          Header="View all Timers"
-                          Click="ClickYot"></MenuItem>
-                <MenuItem Name="YotItem" 
-                          Header="Create your own timer"
-                          Click="ClickYot"></MenuItem>
+                <MenuItem Header="View all Timers" />
+                <MenuItem Header="Create your own timer" />
             </MenuItem>
             
             <MenuItem Header="About">
                 <!-- About MENU-->
-                <MenuItem Name="AboutUsItem" 
-                          Header="About Us"
-                          Click="ClickAboutUs"></MenuItem>
+                <MenuItem Header="About Us" />
             </MenuItem>
             
         </Menu>

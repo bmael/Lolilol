@@ -35,8 +35,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Model\" />
-    <Folder Include="View\" />
-    <Folder Include="ViewModel\" />
   </ItemGroup>
   <PropertyGroup>
     <StartupObject>Lolilol.App</StartupObject>
@@ -75,9 +73,6 @@
   <ItemGroup>
     <Content Include="Images\haxball.png" />
     <Content Include="Images\lolilol_icon.png" />
-    <Content Include="LolilolDB.sdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
