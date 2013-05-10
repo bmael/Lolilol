@@ -101,9 +101,25 @@
     <Compile Include="ViewModel\MainWindowModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common.Champion\Common.Champion.csproj">
+      <Project>{FE32FD30-2D5F-4C6E-B023-6751C9C85A43}</Project>
+      <Name>Common.Champion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.Data.Utils\Common.Data.Utils.csproj">
+      <Project>{43B5BE25-46F8-4571-B391-465CE5477AD3}</Project>
+      <Name>Common.Data.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.Data\Common.Data.csproj">
+      <Project>{BE4EB3E7-CCB3-488F-8F66-EA81174A75F3}</Project>
+      <Name>Common.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Control.Champion\Control.Champion.csproj">
       <Project>{E045387D-51AF-43D2-97D1-64EC837A2663}</Project>
       <Name>Control.Champion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data.Management\Data.Management.csproj">
+      <Project>{39C38DC5-480C-4722-937D-83760E6F7980}</Project>
+      <Name>Data.Management</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

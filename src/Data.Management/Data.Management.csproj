@@ -143,6 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Champion\Champion.cs" />
+    <Compile Include="Champion\ChampionFactory.cs" />
     <Compile Include="Champion\ChampionManager.cs" />
     <Compile Include="DbConnectionProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -162,7 +163,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="System.Data.SQLite.dll" />
     <Content Include="x64\SQLite.Interop.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
