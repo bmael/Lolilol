@@ -12,7 +12,7 @@ namespace Lolilol.View
     using System.Windows;
 
     /// <summary>
-    /// Logique d'interaction pour Mainwindow.xaml
+    /// Logic interaction for the main window.
     /// </summary>
     public partial class Mainwindow : Window
     {
@@ -22,132 +22,6 @@ namespace Lolilol.View
         public Mainwindow()
         {
             this.InitializeComponent();
-        }
-
-        /// <summary>
-        /// The window_ loaded.
-        /// </summary>
-        /// <param name="sender">
-        /// The sender.
-        /// </param>
-        /// <param name="e">
-        /// The e.
-        /// </param>
-        private void WindowLoaded(object sender, RoutedEventArgs e)
-        {
-            // Not implemented Yet
-        }
-
-        /// <summary>
-        /// Allow a user to close Lolilol Application Memento.
-        /// </summary>
-        /// <param name="sender">
-        /// The sender.
-        /// </param>
-        /// <param name="e">
-        /// The e.
-        /// </param>
-        private void ClickClose(object sender, RoutedEventArgs e)
-        {
-            Application.Current.Shutdown();
-        }
-
-        /// <summary>
-        /// Allow a user to display all champions of the game.
-        /// </summary>
-        /// <param name="sender">
-        /// The sender.
-        /// </param>
-        /// <param name="e">
-        /// The e.
-        /// </param>
-        private void ClickAllChamp(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        /// <summary>
-        /// Allow a user to display all champions of the week.
-        /// </summary>
-        /// <param name="sender">
-        /// The sender.
-        /// </param>
-        /// <param name="e">
-        /// The e.
-        /// </param>
-        private void ClickCow(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        /// <summary>
-        /// Allow a user to display all items of the game.
-        /// </summary>
-        /// <param name="sender">
-        /// The sender.
-        /// </param>
-        /// <param name="e">
-        /// The e.
-        /// </param>
-        void ClickAllItems(object sender, RoutedEventArgs e)
-        {
-    
-        }
-
-        /// <summary>
-        /// Allow a user to display all builds of the game.
-        /// </summary>
-        /// <param name="sender">
-        /// The sender.
-        /// </param>
-        /// <param name="e">
-        /// The e.
-        /// </param>
-        private void ClickAllBuilds(object sender, RoutedEventArgs e)
-        {
-       
-        }
-
-        /// <summary>
-        /// Allow a user to create his own build for his character.
-        /// </summary>
-        /// <param name="sender">
-        /// The sender.
-        /// </param>
-        /// <param name="e">
-        /// The e.
-        /// </param>
-        private void ClickYob(object sender, RoutedEventArgs e)
-        {
-    
-        }
-
-        /// <summary>
-        /// Allow a user to create his own timer for the game.
-        /// </summary>
-        /// <param name="sender">
-        /// The sender.
-        /// </param>
-        /// <param name="e">
-        /// The e.
-        /// </param>
-        private void ClickYot(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        /// <summary>
-        /// Allow a user to know more about us.
-        /// </summary>
-        /// <param name="sender">
-        /// The sender.
-        /// </param>
-        /// <param name="e">
-        /// The e.
-        /// </param>
-        private void ClickAboutUs(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
