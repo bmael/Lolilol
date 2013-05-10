@@ -6,7 +6,7 @@
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{37115058-0762-439A-A339-DDA9BD23D892}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Lolilol</RootNamespace>
     <AssemblyName>Lolilol</AssemblyName>
@@ -36,6 +36,7 @@
   <ItemGroup>
     <Folder Include="Model\" />
     <Folder Include="View\" />
+    <Folder Include="ViewModel\" />
   </ItemGroup>
   <PropertyGroup>
     <StartupObject>Lolilol.App</StartupObject>
@@ -70,7 +71,10 @@
     <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
+    <Content Include="Images\haxball.png" />
+    <Content Include="Images\lolilol_icon.png" />
     <Content Include="LolilolDB.sdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -80,7 +84,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
-    <Page Include="Mainwindow.xaml">
+    <Page Include="View\Mainwindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -90,7 +94,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Mainwindow.xaml.cs">
+    <Compile Include="View\Mainwindow.xaml.cs">
       <DependentUpon>Mainwindow.xaml</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
