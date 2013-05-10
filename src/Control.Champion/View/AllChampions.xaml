@@ -7,7 +7,7 @@
              xmlns:data="clr-namespace:Tools.Windows.Data;assembly=Tools"
              xmlns:viewModel="clr-namespace:Control.Champion.ViewModel"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300" d:DataContext="{d:DesignInstance Type=viewModel:AllChampionsModel}">
+             d:DesignHeight="300" d:DesignWidth="300" >
 
     <UserControl.DataContext>
         <viewModel:AllChampionsModel />
@@ -16,7 +16,7 @@
     <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="../TemplateDictionary.xaml"/>
+                <ResourceDictionary Source="../TemplateDictionary.xaml" />
                 <ResourceDictionary>
                     <data:FirstLetterConverter x:Key="FirstLetterConverter" />
                     <CollectionViewSource x:Key="ContactCvs" Source="{Binding Path=Champions}">
