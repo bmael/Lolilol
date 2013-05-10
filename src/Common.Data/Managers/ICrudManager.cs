@@ -1,12 +1,3 @@
-// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="ICrudManager.cs" company="Dental-Moving">
-//   Copyright © 2013 Dental-Moving All Rights Reserved
-// </copyright>
-// <summary>
-//   The CrudManager interface.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
 namespace Common.Data.Managers
 {
     using Common.Data.Models;

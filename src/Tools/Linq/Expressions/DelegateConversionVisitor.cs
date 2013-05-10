@@ -1,14 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="DelegateConversionVisitor.cs" company="Dental-Moving">
-//   Copyright © Dental-Moving 2012
-// </copyright>
-// <summary>
-//   Defines the DelegateConversionVisitor type.
-//      Code from (before stylecoping) : http://stackoverflow.com/a/11454100
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-namespace Tools.Linq.Expressions
+﻿namespace Tools.Linq.Expressions
 {
     using System;
     using System.Collections.Generic;

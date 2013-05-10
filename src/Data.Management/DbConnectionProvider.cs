@@ -1,13 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="DbConnectionProvider.cs" company="Dental-Moving">
-//   Copyright © 2013 Dental-Moving All Rights Reserved
-// </copyright>
-// <summary>
-//   Defines the DbConnectionProvider type.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-namespace Data.Management
+﻿namespace Data.Management
 {
     using System.Data;
     using System.Data.SQLite;

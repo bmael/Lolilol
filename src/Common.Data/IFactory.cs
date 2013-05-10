@@ -1,13 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="IFactory.cs" company="Dental-Moving">
-//   Copyright © 2013 Dental-Moving All Rights Reserved
-// </copyright>
-// <summary>
-//   The Factory interface.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-namespace Common.Data
+﻿namespace Common.Data
 {
     using System;
 

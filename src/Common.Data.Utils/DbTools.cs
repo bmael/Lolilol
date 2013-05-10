@@ -1,13 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="DbTools.cs" company="Dental-Moving">
-//   Copyright © 2013 Dental-Moving All Rights Reserved
-// </copyright>
-// <summary>
-//   Static class, define database usefull functions.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-namespace Common.Data.Utils
+﻿namespace Common.Data.Utils
 {
     using System;
     using System.Data;

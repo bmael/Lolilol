@@ -1,12 +1,3 @@
-// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="DbManagerBase.cs" company="Dental-Moving">
-//   Copyright © 2013 Dental-Moving All Rights Reserved
-// </copyright>
-// <summary>
-//   The db manager base class.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
 namespace Common.Data.Utils
 {
     using System;

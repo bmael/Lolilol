@@ -37,7 +37,8 @@
         /// <summary>
         /// Initializes a new instance of the <see cref="AllChampionsModel"/> class.
         /// </summary>
-        public AllChampionsModel() : this(new ChampionManager(DbConnectionProvider.Instance()))
+        public AllChampionsModel() 
+            : this(new ChampionManager(DbConnectionProvider.Instance()))
         {
         }
 

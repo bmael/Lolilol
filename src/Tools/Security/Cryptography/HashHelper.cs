@@ -1,13 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="HashHelper.cs" company="Dental-Moving">
-//   Copyright © Dental-Moving 2012
-// </copyright>
-// <summary>
-//   The hash helper.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-namespace Tools.Security.Cryptography
+﻿namespace Tools.Security.Cryptography
 {
     using System;
     using System.Security.Cryptography;

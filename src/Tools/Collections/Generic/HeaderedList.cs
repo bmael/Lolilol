@@ -1,13 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="HeaderedList.cs" company="Dental-Moving">
-//   Copyright © 2013 Dental-Moving All Rights Reserved
-// </copyright>
-// <summary>
-//   Defines the HeaderedList type.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-namespace Tools.Collections.Generic
+﻿namespace Tools.Collections.Generic
 {
     using System.Collections.Generic;
 

@@ -1,13 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="FirstLetterConverter.cs" company="Dental-Moving">
-//   Copyright © 2013 Dental-Moving All Rights Reserved
-// </copyright>
-// <summary>
-//   Defines the FirstLetterConverter type.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-namespace Tools.Windows.Data
+﻿namespace Tools.Windows.Data
 {
     using System;
     using System.Globalization;

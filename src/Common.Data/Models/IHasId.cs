@@ -1,12 +1,3 @@
-// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="IHasId.cs" company="Dental-Moving">
-//   Copyright © 2013 Dental-Moving All Rights Reserved
-// </copyright>
-// <summary>
-//   Defines the IHasId type.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
 namespace Common.Data.Models
 {
     /// <summary>

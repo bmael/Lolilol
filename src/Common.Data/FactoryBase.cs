@@ -1,14 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="FactoryBase.cs" company="Dental-Moving">
-//   Copyright © 2013 Dental-Moving All Rights Reserved
-// </copyright>
-// <summary>
-//   The factory base.
-//   Based on Daniel Wertheim solution http://daniel.wertheim.se/2011/12/29/c-generic-factory-with-support-for-private-constructors/
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-namespace Common.Data
+﻿namespace Common.Data
 {
     using System;
     using System.Linq.Expressions;

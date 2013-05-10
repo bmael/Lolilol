@@ -38,7 +38,8 @@
     <Folder Include="Model\" />
   </ItemGroup>
   <PropertyGroup>
-    <StartupObject>Lolilol.App</StartupObject>
+    <StartupObject>
+    </StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Practices.Prism">
@@ -102,10 +103,6 @@
     <ProjectReference Include="..\Control.Champion\Control.Champion.csproj">
       <Project>{E045387D-51AF-43D2-97D1-64EC837A2663}</Project>
       <Name>Control.Champion</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DBManager\DBManager.csproj">
-      <Project>{496EDEE9-D2B7-4197-9709-C46717FBF239}</Project>
-      <Name>DBManager</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

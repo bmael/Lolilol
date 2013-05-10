@@ -1,12 +1,3 @@
-// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="IGetManager.cs" company="Dental-Moving">
-//   Copyright © 2013 Dental-Moving All Rights Reserved
-// </copyright>
-// <summary>
-//   Defines the IGetManager type.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
 namespace Common.Data.Managers
 {
     using System;

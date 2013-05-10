@@ -55,12 +55,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DBManagerTest.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DBManager\DBManager.csproj">
-      <Project>{496EDEE9-D2B7-4197-9709-C46717FBF239}</Project>
-      <Name>DBManager</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

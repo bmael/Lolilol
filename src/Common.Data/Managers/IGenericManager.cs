@@ -1,12 +1,3 @@
-// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="IGenericManager.cs" company="Dental-Moving">
-//   Copyright © 2013 Dental-Moving All Rights Reserved
-// </copyright>
-// <summary>
-//   Defines the IGenericManager type.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
 namespace Common.Data.Managers
 {
     /// <summary>
