@@ -1,13 +1,29 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:champion="clr-namespace:Common.Champion;assembly=Common.Champion">
-    
+
+    <DrawingBrush x:Key="Identity" Stretch="Uniform">
+        <DrawingBrush.Drawing>
+            <DrawingGroup>
+                <DrawingGroup.ClipGeometry>
+                    <RectangleGeometry Rect="0,0,75,90" />
+                </DrawingGroup.ClipGeometry>
+                <DrawingGroup Transform="1,0,0,1,0,-962.36215">
+                    <GeometryDrawing Brush="Black">
+                        <GeometryDrawing.Geometry>
+                            <PathGeometry FillRule="Nonzero" Figures="M3.602892,962.36215C1.593223,962.36215,0,963.96209,0,965.93476L0,1048.8258C0,1050.7984,1.593223,1052.3622,3.602892,1052.3622L8.89702,1052.3622C9.279057,1049.1339 9.759044,1045.939 10.40438,1042.9437 11.148514,1039.4898 12.067839,1036.2359 13.125006,1033.1641 14.182081,1030.0923 15.360544,1027.2237 16.691172,1024.6115 18.0218,1021.9994 19.501437,1019.6138 21.066171,1017.5386 22.630904,1015.4633 24.306771,1013.6947 26.066191,1012.234 27.82554,1010.773 29.666248,1009.647 31.580856,1008.8779 32.538191,1008.4934 33.496561,1008.1728 34.485283,1007.9757 35.474005,1007.7788 36.484791,1007.6873 37.500005,1007.6873 38.51523,1007.6873 39.525943,1007.7783 40.514727,1007.9757 41.503449,1008.1726 42.461818,1008.4934 43.419092,1008.8779 45.333762,1009.647 47.174409,1010.773 48.933829,1012.234 50.693239,1013.6948 52.369106,1015.4633 53.933839,1017.5386 55.498573,1019.6138 56.97822,1021.9995 58.308838,1024.6115 59.639467,1027.2237 60.817919,1030.0923 61.875004,1033.1641 62.932099,1036.2358 63.851424,1039.4897 64.59562,1042.9437 65.240956,1045.939 65.720622,1049.1339 66.10298,1052.3622L71.397046,1052.3622C73.406777,1052.3622,75,1050.7984,75,1048.8258L75,965.93476C75,963.96209,73.406777,962.36215,71.397046,962.36215L3.602892,962.36215z M37.500005,972.46646C47.160324,972.46646 55,980.16155 55,989.64365 55,999.12585 47.160324,1006.8208 37.500005,1006.8208 27.839686,1006.8208 20.00001,999.12585 20.00001,989.64365 20.00001,980.16155 27.839686,972.46646 37.500005,972.46646z" />
+                        </GeometryDrawing.Geometry>
+                    </GeometryDrawing>
+                </DrawingGroup>
+            </DrawingGroup>
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+
     <DataTemplate x:Key="ClassicTemplate" DataType="{x:Type champion:IChampion}">
-        <Grid>
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="{Binding Path=Name}" />
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="{Binding Path=Name}" HorizontalAlignment="Center" />
+                <Border Background="{StaticResource ResourceKey=Identity}" Width="50" Height="50" MinWidth="50" MinHeight="50" />
             </StackPanel>
-        </Grid>
     </DataTemplate>
     
 </ResourceDictionary>

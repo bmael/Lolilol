@@ -24,7 +24,7 @@
                             <componentModel:SortDescription PropertyName="Name" />
                         </CollectionViewSource.SortDescriptions>
                         <CollectionViewSource.GroupDescriptions>
-                            <PropertyGroupDescription PropertyName="LastName" Converter="{StaticResource ResourceKey=FirstLetterConverter}" />
+                            <PropertyGroupDescription PropertyName="Name" Converter="{StaticResource ResourceKey=FirstLetterConverter}" />
                         </CollectionViewSource.GroupDescriptions>
                     </CollectionViewSource>
                 </ResourceDictionary>
