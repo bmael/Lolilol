@@ -6,6 +6,7 @@
     using Data.Management;
     using Data.Management.Champion;
 
+    using Microsoft.Practices.Prism.Commands;
     using Microsoft.Practices.Prism.ViewModel;
 
     /// <summary>
@@ -30,6 +31,11 @@
         /// </summary>
         private Champion selectedChampion;
 
+        /// <summary>
+        /// The open champion details.
+        /// </summary>
+        private bool openChampionDetails;
+
         #endregion
 
         #region .ctors
@@ -52,6 +58,10 @@
         {
             this.championManager = manager;
             this.champions = manager.Get();
+
+            this.OpenChampionDetails = false;
+
+            this.ChampionClickedCommand = new DelegateCommand(this.ChampionClicked);
         }
 
         #endregion
@@ -90,6 +100,44 @@
                 this.selectedChampion = value;
                 this.RaisePropertyChanged("SelectedChampion");
             }
+        }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether open champion details.
+        /// </summary>
+        public bool OpenChampionDetails
+        {
+            get
+            {
+                return this.openChampionDetails;
+            }
+            
+            set
+            {
+                this.openChampionDetails = value;
+                this.RaisePropertyChanged("OpenChampionDetails");
+            }
+        }
+
+        #endregion
+
+        #region Delegate Commands
+
+        /// <summary>
+        /// Gets the champion clicked command.
+        /// </summary>
+        public DelegateCommand ChampionClickedCommand { get; private set; }
+
+        #endregion
+
+        #region Commands
+
+        /// <summary>
+        /// The champion clicked.
+        /// </summary>
+        private void ChampionClicked()
+        {
+            this.OpenChampionDetails = true;
         }
 
         #endregion
