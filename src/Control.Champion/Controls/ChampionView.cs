@@ -1,4 +1,13 @@
-﻿namespace Control.Champion.Controls
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="ChampionView.cs" company="Kiss Fairy Corporation">
+//   All Right reserved.
+// </copyright>
+// <summary>
+//   The champion view model.
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
+
+namespace Control.Champion.Controls
 {
     using System.Linq;
     using System.Windows;
@@ -136,6 +145,7 @@
             set
             {
                 this.SetValue(ChampionNameProperty, value);
+                this.RaiseChampionNameChangedEvent();
             }
         }
 

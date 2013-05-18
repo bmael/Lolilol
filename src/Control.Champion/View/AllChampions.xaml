@@ -46,24 +46,12 @@
         <StackPanel x:Name="MainStack" Grid.Row="1" Grid.Column="0">
         <ListBox ItemsSource="{Binding Source={StaticResource ResourceKey=ContactCvs}}"
                  SelectedItem="{Binding Path=SelectedChampion}" >
-            <ListBox.GroupStyle>
-                <GroupStyle>
-                    <GroupStyle.ContainerStyle>
-                        <Style TargetType="{x:Type GroupItem}">
-                            <Setter Property="Template">
-                                <Setter.Value>
-                                    <ControlTemplate TargetType="{x:Type GroupItem}">
-                                        <Expander IsExpanded="True" Header="{Binding Path=Name}" >
-                                            <ItemsPresenter />
-                                        </Expander>
-                                    </ControlTemplate>
-                                </Setter.Value>
-                            </Setter>
-                        </Style>
-                    </GroupStyle.ContainerStyle>
-                </GroupStyle>
-            </ListBox.GroupStyle>
-            <ListBox.Style>
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Columns="3" />
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+                <ListBox.Style>
                 <Style TargetType="ListBox">
                     <Setter Property="Background" Value="LightGray" />
                     <Setter Property="ItemTemplate" Value="{StaticResource ResourceKey=ClassicTemplate}" />
@@ -73,8 +61,7 @@
         </StackPanel>
 
         <StackPanel Grid.Row="2">
-            <myControls:ChampionView x:Name="ChampionView" ChampionName="{Binding Path=SelectedChampion.Name}"/>
-                <!--<view:ChampionView x:Name="ChampionDetails" ChampionName="{Binding Path=SelectedChampion.Name}" />-->
+            <myControls:ChampionView ChampionName="{Binding Path=SelectedChampion.Name}"/>
         </StackPanel>
 
     </Grid>

@@ -2,11 +2,11 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:controls="clr-namespace:Control.Champion.Controls">
     
-    <!--<ResourceDictionary.MergedDictionaries>
+    <ResourceDictionary.MergedDictionaries>
 
         <ResourceDictionary Source="../../TemplateDictionary.xaml" />
 
-        <ResourceDictionary>-->
+        <ResourceDictionary>
             <Style TargetType="{x:Type controls:ChampionView}">
             
                 <Setter Property="Template">
@@ -14,7 +14,7 @@
                         <ControlTemplate TargetType="{x:Type controls:ChampionView}">
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
                                 <Label>
-                                    <!--<Border Background="{StaticResource ResourceKey=Identity}" Width="150" Height="150" />-->
+                                    <Border Background="{StaticResource ResourceKey=Identity}" Width="150" Height="150" />
                                 </Label>    
                                 <StackPanel Orientation="Vertical">
                                     <StackPanel Orientation="Horizontal">
@@ -31,7 +31,7 @@
                     </Setter.Value>
                 </Setter>
             </Style>
-        <!--</ResourceDictionary>-->
+        </ResourceDictionary>
         
-    <!--</ResourceDictionary.MergedDictionaries>-->
+   </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
